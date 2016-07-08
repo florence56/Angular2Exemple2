@@ -27,12 +27,13 @@ export class ClientDetailComponent implements OnInit {
     submitted = false;
 
     ngOnInit() {
-        //this._listeClients = this._clientService.getClients();
-        this._clientService.getClients()
-            .then(clients => {
+        
+        this._listeClients = this._clientService.getClients();
+          this.setEncours(0);
+            /*.then(clients => {
                 this._listeClients = clients;
                 this.setEncours(0);
-            });
+            });*/
     }
     
     onSubmit() {

@@ -9,11 +9,11 @@ export class ClientService {
 
     public getClients() {
         //return (CLIENTS);
-        return Promise.resolve(CLIENTS);
+        return /*Promise.resolve*/(CLIENTS);
     }
 
     public getClient(id : number) {
-        return Promise.resolve(CLIENTS.filter(client => client.id === id));
+        return /*Promise.resolve*/(CLIENTS.filter(client => client.id === id));
     }
 
     public setClient(client : Client) : boolean {
