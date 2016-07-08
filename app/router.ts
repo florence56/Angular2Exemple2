@@ -4,7 +4,7 @@ import { ArticleDetailComponent } from './article/article.component';
 
 export const routes: RouterConfig = [
   {
-    path: '',
+    path: '', //chemin
 
     redirectTo: '/client',
     pathMatch: 'full'
